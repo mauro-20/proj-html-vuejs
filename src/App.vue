@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :logoUrl="require('./assets/images/logo-default-slim.png')" :nav="mainNav"/>
     <Main />
     <Footer />
   </div>
@@ -17,6 +17,11 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data() {
+    return {
+      mainNav: ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop']
+    }
   }
 }
 </script>
