@@ -19,7 +19,7 @@ export default {
     HeroCard,
   },
   props: {
-    posts: Object
+    posts: Array
   }
 };
 </script>
