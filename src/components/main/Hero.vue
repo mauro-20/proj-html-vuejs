@@ -1,12 +1,11 @@
 <template>
   <section class="hero">
     <div class="container">
-      <HeroCard />
-      <HeroCard />
-      <HeroCard />
-      <HeroCard />
-      <HeroCard />
-      <HeroCard />
+      <ul>
+        <li v-for="(post, index) in posts" :key="index">
+          <HeroCard :url="post.url" :tag="post.tag" :title="post.title" :content="post.content"/>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -19,6 +18,9 @@ export default {
   components: {
     HeroCard,
   },
+  props: {
+    posts: Object
+  }
 };
 </script>
 
@@ -27,12 +29,13 @@ export default {
 
   .hero{
     background-color: $bg-light-200;
+    padding: 30px 0;
 
-    .container {
+    ul{
       display: flex;
       flex-wrap: wrap;
-
-      *{
+      
+      li{
         width: calc((100% - 30px) / 3);
         margin-right: 15px;
         margin-bottom: 15px;
