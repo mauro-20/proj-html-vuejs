@@ -3,7 +3,7 @@
     <div class="container">
       <ul>
         <li v-for="(post, index) in posts" :key="index">
-          <HeroCard :url="post.url" :tag="post.tag" :title="post.title" :content="post.content"/>
+          <HeroCard :post="post"/>
         </li>
       </ul>
     </div>

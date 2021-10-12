@@ -1,10 +1,10 @@
 <template>
   <div class="card">
-    <img :src="url">
+    <img :src="post.url">
     <div class="text">
-      <div class="tag">{{tag}}</div>
-      <div class="title">{{title}}</div>
-      <div class="content">{{content}}</div>
+      <div class="tag">{{post.tag}}</div>
+      <div class="title">{{post.title}}</div>
+      <div class="content">{{post.content}}</div>
     </div>
   </div>
 </template>
@@ -13,10 +13,7 @@
 export default {
   name:'HeroCard',
   props: {
-    url: String,
-    tag: String,
-    title: String,
-    content: String
+    post: Object
   }
 }
 </script>

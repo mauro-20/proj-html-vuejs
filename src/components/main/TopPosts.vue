@@ -2,29 +2,48 @@
   <section class="top-posts">
     <div class="container">
       <div class="col">
-        <SmallThumb title="popular posts" :posts="popular"/>
+        <h3 class="title">popular posts</h3>
+          <ul>
+            <li v-for="(post, index) in popular" :key="index" class="post">
+              <SmallThumb :post="post"/>
+            </li>
+          </ul>
       </div>
       <div class="col">
-        <SmallThumb title="recent posts" :posts="recent"/>
+        <h3 class="title">recent posts</h3>
+        <ul>
+          <li v-for="(post, index) in recent" :key="index" class="post">
+            <SmallThumb :post="post"/>
+          </li>
+        </ul>
       </div>
       <div class="col">
-
+        <h3 class="title">featured posts</h3>
+        <HeroCard :post="featured" class="featured-posts"/>
+        <h3 class="title featured-author">featured author</h3>
+        <AuthorThumb :details="featuredAuthor"/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-  import SmallThumb from './SmallThumb.vue'
+  import SmallThumb from './SmallThumb.vue';
+  import HeroCard from './HeroCard.vue';
+  import AuthorThumb from './AuthorThumb.vue';
 
   export default {
     name: 'TopPosts',
     components: {
-      SmallThumb
+      SmallThumb,
+      HeroCard,
+      AuthorThumb
     },
     props: {
       popular: Array,
-      recent: Array
+      recent: Array,
+      featured: Object,
+      featuredAuthor: Object
     }
   }
 </script>
@@ -45,6 +64,20 @@
 
         &:nth-child(3n){
           margin-right: 0;
+        }
+
+        .title{
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+        .post{
+          border-bottom: 1px dotted $text-light-200;
+          &:last-child{
+            border: none;
+          }
+        }
+        .featured-posts{
+          margin: 40px 0 35px;
         }
       }
     }
