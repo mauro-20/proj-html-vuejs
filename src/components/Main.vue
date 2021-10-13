@@ -2,18 +2,21 @@
   <main>
     <Hero :posts="heroPosts" />
     <TopPosts :popular="popularPosts" :recent="recentPosts" :featured="featuredPost" :featuredAuthor="featuredAuthor"/>
+    <TagMenu :tags="tags"/>
   </main>
 </template>
 
 <script>
 import Hero from "./main/Hero.vue";
 import TopPosts from "./main/TopPosts.vue";
+import TagMenu from "./main/TagMenu.vue";
 
 export default {
   name: "Main",
   components: {
     Hero,
     TopPosts,
+    TagMenu
   },
   data() {
     return {
@@ -157,11 +160,13 @@ export default {
         url: require("../assets/images/avatar.jpg"),
         name: 'John Doe',
         info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolor sit amet, consectetur adipisicing elit.'
-      }
+      },
+      tags: ['gadgets', 'photography', 'lifestyle', 'fashion', 'recipes', 'travel']
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+
 </style>
