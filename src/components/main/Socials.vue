@@ -1,13 +1,21 @@
 <template>
   <section class="socials">
-
+    <Twitter />
+    <Instagram />
   </section>
 </template>
 
 <script>
-export default {
+  import Instagram from './Instagram.vue'
+  import Twitter from './Twitters.vue'
 
-}
+  export default {
+    name: 'Socials',
+    components: {
+      Twitter,
+      Instagram
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -15,7 +23,7 @@ export default {
 
   .socials{
     width: 30%;
-    // background-color: turquoise;
+    padding-left: 30px;
   }
 
 </style>

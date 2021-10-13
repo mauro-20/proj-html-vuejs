@@ -209,7 +209,8 @@ export default {
           date: "January 12, 2019",
         },
         {
-          images: [require("../assets/images/blog-13.jpg"),
+          images: [
+            require("../assets/images/blog-13.jpg"),
             require("../assets/images/blog-16.jpg"),
             require("../assets/images/blog-20.jpg"),
             require("../assets/images/blog-23.jpg"),
