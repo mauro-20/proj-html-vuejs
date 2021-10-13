@@ -3,6 +3,7 @@
     <Hero :posts="heroPosts" />
     <TopPosts :popular="popularPosts" :recent="recentPosts" :featured="featuredPost" :featuredAuthor="featuredAuthor"/>
     <TagMenu :tags="tags"/>
+    <MainContent :posts="previewPosts" />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Hero from "./main/Hero.vue";
 import TopPosts from "./main/TopPosts.vue";
 import TagMenu from "./main/TagMenu.vue";
+import MainContent from "./main/MainContent.vue";
 
 export default {
   name: "Main",
   components: {
     Hero,
     TopPosts,
-    TagMenu
+    TagMenu,
+    MainContent
   },
   data() {
     return {
@@ -161,7 +164,67 @@ export default {
         name: 'John Doe',
         info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolor sit amet, consectetur adipisicing elit.'
       },
-      tags: ['gadgets', 'photography', 'lifestyle', 'fashion', 'recipes', 'travel']
+      tags: [
+        'gadgets', 'photography', 'lifestyle', 'fashion', 'recipes', 'travel'
+        ],
+      previewPosts :[
+        {
+          url: require("../assets/images/blog-54.jpg"),
+          title: "How to Make Friends as a Grown-Up",
+          tags: ['Lifestyle,', 'Travel'],
+          author: "John Doe",
+          commentNumber: "12",
+          content:
+            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+          date: "January 12, 2019",
+        },
+        {
+          url: require("../assets/images/blog-55 (1).jpg"),
+          title: "Simple Ways to Have a Pretty Face",
+          tags: ['Photography,', 'Travel'],
+          author: "John Doe",
+          commentNumber: "12",
+          content:
+            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+          date: "January 12, 2019",
+        },
+        {
+          url: require("../assets/images/blog-56 (1).jpg"),
+          title: "Ranking the greatest players in basketball",
+          tags: ['Sports,', 'Business'],
+          author: "John Doe",
+          commentNumber: "12",
+          content:
+            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+          date: "January 12, 2019",
+        },
+        {
+          url: require("../assets/images/blog-58 (1).jpg"),
+          title: "Top Camper Trailer Towing Tips",
+          tags: ['Travel,', 'Lifestyle'],
+          author: "John Doe",
+          commentNumber: "12",
+          content:
+            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+          date: "January 12, 2019",
+        },
+        {
+          images: [require("../assets/images/blog-13.jpg"),
+            require("../assets/images/blog-16.jpg"),
+            require("../assets/images/blog-20.jpg"),
+            require("../assets/images/blog-23.jpg"),
+            require("../assets/images/blog-29.jpg"),
+            require("../assets/images/blog-40.jpg")
+          ],
+          title: "10 Best Travel Tips After 5 Years Traveling The World",
+          tags: ['Travel,', 'Lifestyle'],
+          author: "John Doe",
+          commentNumber: "12",
+          content:
+            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+          date: "January 12, 2019",
+        },
+      ]
     };
   },
 };
