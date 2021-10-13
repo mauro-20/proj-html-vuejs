@@ -2,18 +2,21 @@
   <section class="socials">
     <Twitter />
     <Instagram />
+    <Facebook />
   </section>
 </template>
 
 <script>
   import Instagram from './Instagram.vue'
   import Twitter from './Twitters.vue'
+  import Facebook from './Facebook.vue'
 
   export default {
     name: 'Socials',
     components: {
       Twitter,
-      Instagram
+      Instagram,
+      Facebook
     }
   }
 </script>

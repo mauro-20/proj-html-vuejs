@@ -36,7 +36,7 @@
   @import '../../assets/style/variables';
 
   .instagram{
-    margin-top: 50px;
+    margin: 50px 0;
 
     h4{
       font-size: 20px;
