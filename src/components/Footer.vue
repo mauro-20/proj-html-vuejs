@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <!-- footer top -->
     <div class="footer-top">
       <div class="container">
         <div class="col-400">
@@ -34,11 +35,36 @@
         </div>
       </div>
     </div>
+    <!-- /footer top -->
+    <!-- footer bottom -->
     <div class="footer-bottom">
       <div class="container">
-        
+        <!-- col left -->
+        <div class="col-left">
+          <img src="../assets/images/logo-footer.png" alt="logo" class="logo">
+          <div class="copyright">
+            <i class="far fa-copyright"></i> Copyright 2020. All Right Resereved.
+          </div>
+        </div>
+        <!-- /col left -->
+        <!-- col right -->
+        <div class="col-right">
+          <div class="links">
+            <div class="link">
+              > FAQ's
+            </div>
+            <div class="link">
+              > Sitemap
+            </div>
+            <div class="link">
+              > Contact Us
+            </div>
+          </div>
+        </div>
+        <!-- /col right -->
       </div>
     </div>
+    <!-- /footer bottom -->
   </footer>
 </template>
 
@@ -132,6 +158,35 @@
   .footer-bottom{
     padding: 30px 0;
     background-color: $bg-dark-800;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+
+      .col-left{
+        display: flex;
+        align-items: center;
+        .logo{
+          margin-right: 100px;
+          width: 100px;
+        }
+        .copyright{
+          color: $text-dark-500;
+        }
+      }
+      .col-right{
+        display: flex;
+        align-items: center;
+        .links{
+          display: flex;
+          .link{
+            margin-left: 20px;
+            color: $text-dark-500;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 
 </style>
