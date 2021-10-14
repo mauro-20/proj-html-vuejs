@@ -175,7 +175,7 @@ export default {
           author: "John Doe",
           commentNumber: "12",
           content:
-            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nobis reiciendis porro eos non suscipit architecto in aperiam, aspernatur ipsam aliquid exercitationem quibusdam! Quos accusantium consequatur, laudantium porro nam iusto!",
           date: "January 12, 2019",
         },
         {
@@ -185,7 +185,7 @@ export default {
           author: "John Doe",
           commentNumber: "12",
           content:
-            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nobis reiciendis porro eos non suscipit architecto in aperiam, aspernatur ipsam aliquid exercitationem quibusdam! Quos accusantium consequatur, laudantium porro nam iusto!",
           date: "January 12, 2019",
         },
         {
@@ -195,7 +195,7 @@ export default {
           author: "John Doe",
           commentNumber: "12",
           content:
-            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nobis reiciendis porro eos non suscipit architecto in aperiam, aspernatur ipsam aliquid exercitationem quibusdam! Quos accusantium consequatur, laudantium porro nam iusto!",
           date: "January 12, 2019",
         },
         {
@@ -205,7 +205,7 @@ export default {
           author: "John Doe",
           commentNumber: "12",
           content:
-            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nobis reiciendis porro eos non suscipit architecto in aperiam, aspernatur ipsam aliquid exercitationem quibusdam! Quos accusantium consequatur, laudantium porro nam iusto!",
           date: "January 12, 2019",
         },
         {
@@ -222,7 +222,7 @@ export default {
           author: "John Doe",
           commentNumber: "12",
           content:
-            "Quisquam numquam aspernatur accusantium iusto blanditiis quis pariatur fugiat, eius vero perferendis!",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, nobis reiciendis porro eos non suscipit architecto in aperiam, aspernatur ipsam aliquid exercitationem quibusdam! Quos accusantium consequatur, laudantium porro nam iusto!",
           date: "January 12, 2019",
         },
       ]

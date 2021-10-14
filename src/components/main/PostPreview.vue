@@ -13,7 +13,7 @@
       </div>
       <div class="content">
         <h3 class="title">{{post.title}}</h3>
-        <div class="text">{{post.content}}}</div>
+        <div class="text">{{post.content}}</div>
         <div class="details">
           <div class="tags">
             <span class="tag">
