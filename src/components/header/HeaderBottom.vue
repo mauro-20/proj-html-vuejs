@@ -63,7 +63,7 @@ export default {
               font-weight: 600;
               text-transform: uppercase;
             }
-            &:hover{
+            &:first-child{
               color: $text-primary;
             }
           }

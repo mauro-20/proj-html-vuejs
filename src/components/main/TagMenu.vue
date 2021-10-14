@@ -58,6 +58,10 @@ export default {
           text-transform: uppercase;
           color: $text-light-100;
           background-color: $bg-dark-700;
+          
+          &:hover{
+            background-color:  $bg-dark-400;
+          }
         }
       }
     }

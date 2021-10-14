@@ -23,6 +23,7 @@ export default {
   .small-thumb{
     display: flex;
     padding: 15px 0;
+    cursor: pointer;
        
     img{
       width: 70px;
