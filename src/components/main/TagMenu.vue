@@ -57,7 +57,7 @@ export default {
           line-height: 50px;
           text-transform: uppercase;
           color: $text-light-100;
-          background-color: $bg-dark-800;
+          background-color: $bg-dark-700;
         }
       }
     }
