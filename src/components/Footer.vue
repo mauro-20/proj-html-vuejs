@@ -3,6 +3,7 @@
     <!-- footer top -->
     <div class="footer-top">
       <div class="container">
+        <div class="label">Get in Touch</div>
         <div class="col-400">
           <h5>ABOUT THE BLOG</h5>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore soluta delectus nihil.</p>
@@ -124,8 +125,30 @@
     background-color: $bg-dark-700;
 
     .container{
+      position: relative;
       display: flex;
       justify-content: space-between;
+      .label{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        padding: 5px 20px;
+        font-size: 25px;
+        font-family: 'Shadows Into Light', cursive;
+        color: $text-light-100;
+        background-color: $bg-primary;
+        &::before{
+          right: 100%;
+          border-right: 10px solid $bg-primary-dark;
+          border-top: 20px solid transparent;
+          content: "";
+          display: block;
+          height: 0;
+          position: absolute;
+          top: 0;
+          width: 7px;
+        }
+      }
       .col-400{
         width: 410px;
       }
